@@ -8,8 +8,8 @@ class ListExamples {
   // Returns a new list that has all the elements of the input list for which
   // the StringChecker returns true, and not the elements that return false, in
   // the same order they appeared in the input list;
-  static ArrayList<String> filter(ArrayList<String> list, StringChecker sc) {
-    ArrayList<String> result = new ArrayList<>();
+  static List<String> filter(ArrayList<String> list, StringChecker sc) {
+    List<String> result = new ArrayList<>();
     for(String s: list) {
       if(sc.checkString(s)) {
         result.add(s);
